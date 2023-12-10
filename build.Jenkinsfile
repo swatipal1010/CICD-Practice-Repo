@@ -6,6 +6,7 @@ pipeline {
             steps {
                 bat 'dir' 
                 bat 'echo building...'
+                bat 'echo Hello World!'
             }
         }
     }
