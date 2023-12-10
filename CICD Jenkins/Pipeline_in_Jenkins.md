@@ -7,8 +7,8 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'ls'
-                sh 'echo building...'
+                sh 'ls'                  //bat 'dir' for Windows
+                sh 'echo building...'   //bat 'echo building...' for Windows
             }
         }
     }
