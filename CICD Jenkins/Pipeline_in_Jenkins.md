@@ -7,8 +7,8 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'ls'
-                sh 'echo building...'
+                sh 'ls'                  //bat 'dir' for Windows
+                sh 'echo building...'   //bat 'echo building...' for Windows
             }
         }
     }
@@ -62,3 +62,5 @@ Commit and push the changes to your repository
 
 10. **Save** the pipeline.
 11. Test the integration by add a [`sh` step](https://www.jenkins.io/doc/pipeline/tour/running-multiple-steps/#linux-bsd-and-mac-os) to the `build.Jenkinsfile`, commit & push and see the triggered job.
+    ![image](https://github.com/swatipal1010/CICD-Practice-Repo/assets/110754474/e3f60fd0-a973-445f-b9fd-9f29884baf74)
+
